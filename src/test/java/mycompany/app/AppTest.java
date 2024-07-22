@@ -23,7 +23,7 @@ public class AppTest
 {
 	WebDriver driver; 
 	WebDriverWait wait; 
-	String url = "http://192.168.86.24";
+	String url = "http://172.18.0.2";
 	String validEmail = "user@example.com";
 	String validPassword = "password1234";
 	String invalidEmail = "none@example.com";
@@ -49,7 +49,7 @@ public class AppTest
 			System.out.println("Waiting for the page to load");
 			wait.until(ExpectedConditions.titleContains("Login Page |")); 
 			System.out.println("Page loaded, proceeding with test steps");
-			
+
 		//get web page
 		driver.get(url);
 		//wait until page is loaded or timeout error
