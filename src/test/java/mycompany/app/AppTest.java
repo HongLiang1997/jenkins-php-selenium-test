@@ -44,6 +44,12 @@ public class AppTest
     public void testLoginWithValidEmailValidPassword() 
 		throws InterruptedException { 
 
+			System.out.println("Navigating to URL: " + url);
+			driver.get(url);
+			System.out.println("Waiting for the page to load");
+			wait.until(ExpectedConditions.titleContains("Login Page |")); 
+			System.out.println("Page loaded, proceeding with test steps");
+			
 		//get web page
 		driver.get(url);
 		//wait until page is loaded or timeout error
